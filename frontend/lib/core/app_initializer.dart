@@ -6,14 +6,6 @@ import 'logger/logger_service.dart';
 
 class AppInitializer {
   static Future<void> init() async {
-    // Firebase 사용 여부 확인
-    const bool useFirebase = bool.fromEnvironment('USE_FIREBASE', defaultValue: false);
-    
-    if (!useFirebase) {
-      LoggerService.info('Firebase', 'Firebase 사용 안 함');
-      return;
-    }
-    
     try {
       await Firebase.initializeApp();
       FirebaseMessaging.onBackgroundMessage(
