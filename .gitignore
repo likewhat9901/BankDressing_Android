@@ -1,0 +1,79 @@
+# ========================== 공통 ==========================
+# IDE
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 환경 변수 파일
+.env
+.env.*
+!.env.example
+
+# ========================== Backend ==========================
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 가상환경
+backend/venv/
+backend/env/
+backend/.venv/
+
+# 데이터 파일 (민감 정보 포함 가능)
+backend/data/
+backend/logs/
+backend/temp/
+backend/test/
+backend/tests/
+
+# Python 관련
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ========================== Frontend (Flutter) ==========================
+# Dart/Flutter
+frontend/.dart_tool/
+frontend/build/
+frontend/.metadata
+frontend/.flutter-plugins-dependencies
+frontend/.flutter-plugins
+frontend/.packages
+
+# Android
+frontend/android/.gradle/
+frontend/android/local.properties
+frontend/android/key.properties
+frontend/android/app/debug/
+frontend/android/app/profile/
+frontend/android/app/release/
+*.jks
+*.keystore
+
+# iOS
+frontend/ios/Flutter/ephemeral/
+frontend/ios/Flutter/.last_build_id
+frontend/ios/Pods/
+frontend/ios/.symlinks/
+frontend/ios/Flutter/Flutter.framework
+frontend/ios/Flutter/Flutter.podspec
+
+# Web
+frontend/web/*.js
+frontend/web/*.js.map
+
+# 기타
+*.symbols
+*.map.json
